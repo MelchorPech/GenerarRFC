@@ -28,8 +28,12 @@ public class MainActivity extends AppCompatActivity {
 
 
         //Tomar la primer letra del apellido materno
+        EditText editTextApMa = (EditText) findViewById(R.id.editTextApMa);
+        editTextApPa.getText().CharAt(0);
 
         //Tomar la primer letra del primer nombre
+        EditText editTextNombre = (EditText) findViewById(R.id.editTextNombre);
+        editTextApPa.getText().CharAt(0);
 
         //Tomar los ùltimo 2 digitos del año de nacimiento
 

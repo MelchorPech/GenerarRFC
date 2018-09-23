@@ -9,167 +9,141 @@
 
     <TextView
         android:id="@+id/textApPa"
-        android:layout_width="85dp"
+        android:layout_width="103dp"
         android:layout_height="21dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="120dp"
-        android:text="Apellido Pa."
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="36dp"
+        android:text="Apellido Pa*."
         android:textSize="16sp"
         android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/editTextApPa"
+        app:layout_constraintTop_toBottomOf="@+id/textNombre" />
 
     <TextView
         android:id="@+id/textFechaNa"
-        android:layout_width="81dp"
+        android:layout_width="94dp"
         android:layout_height="21dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="236dp"
-        android:text="Fecha Nac."
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="28dp"
+        android:text="Fecha Nac.*"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextFechaN"
-        app:layout_constraintHorizontal_bias="0.021"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/editTextFechaN"
+        app:layout_constraintTop_toBottomOf="@+id/textApMa" />
 
     <TextView
         android:id="@+id/textRFC"
-        android:layout_width="36dp"
+        android:layout_width="81dp"
         android:layout_height="27dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="41dp"
-        android:layout_marginTop="360dp"
-        android:text="RFC"
+        android:layout_marginTop="80dp"
+        android:text="SU RFC"
         android:textColor="?attr/colorControlActivated"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintEnd_toStartOf="@+id/editTextRFC"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textHomo" />
 
     <TextView
         android:id="@+id/textHomo"
         android:layout_width="83dp"
         android:layout_height="21dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="304dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="36dp"
         android:text="Homonimia"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextHomo"
-        app:layout_constraintHorizontal_bias="0.037"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/editTextHomo"
+        app:layout_constraintTop_toBottomOf="@+id/textFechaNa" />
 
     <TextView
         android:id="@+id/textApMa"
-        android:layout_width="89dp"
+        android:layout_width="98dp"
         android:layout_height="21dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="172dp"
-        android:text="Apellido Ma."
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Apellido Ma.*"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextApMa"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/editTextApMa"
+        app:layout_constraintTop_toBottomOf="@+id/textApPa" />
 
     <TextView
         android:id="@+id/textNombre"
-        android:layout_width="58dp"
+        android:layout_width="72dp"
         android:layout_height="21dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="sans-serif"
-        android:text="Nombre"
+        android:text="Nombre*"
         android:textSize="16sp"
         android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNombre"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextApMa"
         android:layout_width="213dp"
         android:layout_height="45dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="164dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextApPa" />
 
     <EditText
         android:id="@+id/editTextRFC"
         style="@style/Widget.AppCompat.EditText"
         android:layout_width="209dp"
         android:layout_height="36dp"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="132dp"
-        android:layout_marginTop="360dp"
-        android:background="?android:attr/colorEdgeEffect"
+        android:layout_marginTop="64dp"
+        android:background="#b7bbd1"
         android:editable="false"
         android:ems="10"
+        android:focusable="false"
         android:inputType="text"
         android:textColor="?android:attr/colorForeground"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextHomo" />
 
     <EditText
         android:id="@+id/editTextHomo"
         android:layout_width="213dp"
         android:layout_height="45dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="296dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
         android:editable="false"
+        android:focusable="false"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.938"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextFechaN" />
 
     <EditText
         android:id="@+id/editTextApPa"
         android:layout_width="213dp"
         android:layout_height="45dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
 
     <EditText
         android:id="@+id/editTextNombre"
         android:layout_width="213dp"
         android:layout_height="45dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="28dp"
         android:ems="10"
+
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
@@ -178,26 +152,25 @@
         android:layout_height="45dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="228dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="date"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.938"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextApMa" />
 
     <Button
         android:id="@+id/buttonLimpiar"
         android:layout_width="88dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="105dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="480dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginTop="456dp"
+        android:onClick="Limpiar"
         android:text="Limpiar"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -206,12 +179,27 @@
         android:layout_height="48dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="46dp"
-        android:layout_marginTop="480dp"
+        android:layout_marginTop="456dp"
         android:onClick="GenerarRFC"
         android:text="Generar RFC"
         android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toStartOf="@+id/buttonLimpiar"
+        app:layout_constraintHorizontal_bias="0.629"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="monospace"
+        android:text="* Campo Obligatorio"
+        android:textAlignment="viewStart"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
